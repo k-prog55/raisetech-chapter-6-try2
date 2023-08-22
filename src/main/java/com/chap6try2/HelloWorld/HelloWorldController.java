@@ -42,6 +42,13 @@ public class HelloWorldController {
         return new Name("shohei", "ohtani");
     }
 
+    //Nameクラス（吉田選手）を表示
+    @GetMapping("/namesyoshi")
+    public Name namesyoshi() {
+        return new Name("masa","yoshida");
+    }
+
+
     //現在時刻を表示（LocalDateTIme)
     @GetMapping("/LocalDateTime")
     public LocalDateTime getCurrentDateTime() {
